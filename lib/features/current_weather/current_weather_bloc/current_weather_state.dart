@@ -1,7 +1,3 @@
-
-
-
-
 import '../data/models/current_weather_model.dart';
 
 sealed class CurrentWeatherState{}

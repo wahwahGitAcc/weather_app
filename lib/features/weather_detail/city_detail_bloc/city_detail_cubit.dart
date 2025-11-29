@@ -13,13 +13,13 @@ class CityDetailCubit extends Cubit<CityDetailState>{
   final CityDetailService _service = GetIt.I.get();
 
   void cityDetail(double lat,double long) async {
-    debugPrint("*************************${lat} ${long}");
+    debugPrint("********$lat $long********");
     try{
       emit(CityDetailLoading());
       CityDetailModel detailModel = await _service.cityDetail(lat: lat, lon: long, appId: UrlConst.appId);
       emit(CityDetailSuccess(detailModel: detailModel));
     }catch (e){
-      debugPrint("EEEEE $e");
+      debugPrint("Error ******** $e");
       emit(CityDetailFailed(errorMessage: "Failed To Load"));
     }
   }

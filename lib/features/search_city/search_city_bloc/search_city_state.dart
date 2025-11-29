@@ -1,6 +1,3 @@
-
-
-
 import '../data/models/search_city_model.dart';
 
 sealed class SearchCityState{}

@@ -1,7 +1,3 @@
-
-
-
-
 import '../data/models/city_detail_model.dart';
 
 sealed class CityDetailState{}

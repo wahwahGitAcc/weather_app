@@ -138,6 +138,8 @@ class _SearchCityScreenState extends State<SearchCityScreen> {
       itemBuilder: (context, index) {
         CitySearchModel searchCityModel = cities[index];
         return Card(
+          shadowColor: Colors.blue,
+          elevation: 5,
           child: ListTile(
             onTap: () {
               debugPrint("Lat **** Lon ${searchCityModel.latitude} ${searchCityModel.longitude}");
